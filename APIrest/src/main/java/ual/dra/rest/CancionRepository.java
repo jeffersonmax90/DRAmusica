@@ -1,0 +1,11 @@
+package ual.dra.rest;
+
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+@RepositoryRestResource()
+public interface CancionRepository extends CrudRepository<Cancion, Long> {
+
+
+}
