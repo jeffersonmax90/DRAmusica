@@ -56,4 +56,10 @@ public class EjemploController {
 	}
 	
 	
+	@GetMapping("/getPosicion/{titulo}")
+	@ResponseBody
+	public List<Cancion> getposicion(@PathVariable String titulo){
+		return cancionRepository.findPosicion(titulo);
+	}
+	
 }
