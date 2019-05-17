@@ -20,7 +20,7 @@ export class CancionAddComponent {
         private _router: Router,
         private _cancionService: CancionesService
     ) {
-        this.title = 'Aadir Cancion';
+        this.title = 'Añadir Cancion';
         this.cancion = new Cancion('','', '', '', '');
     }
 

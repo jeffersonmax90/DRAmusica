@@ -56,13 +56,9 @@ export class CancionesService {
         
     }
 
-    getHola() : Observable<any>{
-                
-        return this._http.get(this.url+'hola',  {responseType: 'text'}) ;
-        
+    deleteCancion(idCancion) : Observable<any>{              
+    return this._http.post(this.url+'deleteCancion/'+idCancion,httpOptions) ;
     }
-
-
 
 }
 

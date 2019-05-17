@@ -72,6 +72,7 @@ public class EjemploController {
 	
 	
 	@PostMapping("/deleteCancion/{idCancion}")
+	@ResponseBody
 	public Response borrarCancion(@PathVariable Long idCancion){
 		cancionRepository.deleteById(idCancion);
 		Response aux= new Response("OK");

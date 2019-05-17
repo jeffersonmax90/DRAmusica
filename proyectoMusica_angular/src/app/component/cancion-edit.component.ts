@@ -31,6 +31,9 @@ export class CancionEditComponent{
       this.getCancion();
     }
 
+  
+
+
     getCancion() {
         //Recoger el parametro de la url
         this._route.params.forEach((params: Params) => {
