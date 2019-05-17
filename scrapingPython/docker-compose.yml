@@ -15,4 +15,4 @@ services:
     depends_on: 
       - postgreSQL
     ports:
-      - "9188:9188"
+      - "8080:8080"
