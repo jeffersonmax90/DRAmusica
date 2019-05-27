@@ -1,6 +1,4 @@
 from urllib.request import urlopen
-#import sys
-#sys.path.append('c:\python36\lib\site-packages')
 from bs4 import BeautifulSoup
 import html5lib
 from array import array
@@ -16,7 +14,7 @@ artistas = res.find_all("div",{"class":"related"})
 imagenes = res.find_all("div",{"class":"thumbnail default cover"})
 
 
-for i in range (len(posiciones)):
+for i in range (len(posiciones)-50):
    posiccionCancion = posiciones[i].text
    titulo = str(titulos[i].text).lstrip().rstrip()
    artista = str(artistas[i].text).lstrip().rstrip()
@@ -30,10 +28,11 @@ for i in range (len(posiciones)):
       'imagen': imagen
             }
 
-   uri = "http://localhost:9188/api/addCancion2"
+   uri = "http://localhost:8080/api/cancion"
 
    print(uri)
-   requests.post(uri,json=data)
+   response = requests.post(uri,json=data)
+   
 
   
 
