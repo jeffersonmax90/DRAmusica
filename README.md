@@ -10,9 +10,9 @@ docker-compose up
 ---
 Lenguaje utilizado es Python para obtener los datos de la web.
 Para ejecutar el scrapping:
-
+```
 python leerDatos.py
-
+```
 2.Base de Datos:
 ---
 Una base de datos PostgreSQL, usado una tabla llamada cancion con 4 campos.
@@ -22,6 +22,7 @@ Una base de datos PostgreSQL, usado una tabla llamada cancion con 4 campos.
 	-Url imagen
 
 3.API Rest:
+---
 Para la API se va a utilizar Sping Boot, con controlador.
 Algunas Consultas son:
 	-Add Canción
